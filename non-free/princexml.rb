@@ -1,10 +1,9 @@
 require 'formula'
 
 class Princexml < Formula
-  url 'http://www.princexml.com/download/prince-8.0-macosx.tar.gz'
   homepage 'http://www.princexml.com'
+  url 'http://www.princexml.com/download/prince-8.0-macosx.tar.gz'
   md5 '0d17a2e9c82277ed5d039444ebf9cecd'
-  version '8.0'
 
   def patches
     # Drop the user input since we're providing the prefix
