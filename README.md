@@ -2,10 +2,11 @@ Homebrew-alt
 ============
 This repository contains "unofficial" formulae for [Homebrew](https://github.com/mxcl/homebrew).
 
-ATTN: the `duplicates` and `versions` directories have been moved to their own repositories:
+ATTN: the `duplicates`, `versions` and `unmaintained` directories have been moved to their own repositories:
 
  * [homebrew-dupes][]
  * [homebrew-versions][]
+ * [homebrew-boneyard][]
 
 Installing Homebrew-alt Formulae
 --------------------------------
@@ -34,9 +35,6 @@ Categories
   * **other**  
   Miscellaneous formulae that do not meet the criteria for acceptance into mxcl/master.
 
-  * **unmaintained**  
-  Formulae for abandoned and unmaintained software.
-
 Docs
 ----
 `brew help`, `man brew`, or the Homebrew [wiki][].
@@ -44,3 +42,4 @@ Docs
 [wiki]:http://wiki.github.com/mxcl/homebrew
 [homebrew-dupes]:https://github.com/Homebrew/homebrew-dupes
 [homebrew-versions]:https://github.com/Homebrew/homebrew-versions
+[homebrew-boneyard]:https://github.com/Homebrew/homebrew-boneyard
