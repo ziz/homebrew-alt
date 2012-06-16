@@ -14,6 +14,13 @@ class Openmotif < Formula
     }
   end
 
+  fails_with :clang do
+    build 318
+    cause <<-EOS.undent
+      Compilation fails because clang only support weak aliases.
+      EOS
+  end
+
   def install
     ENV.deparallelize
     system "./configure", "--disable-dependency-tracking",
