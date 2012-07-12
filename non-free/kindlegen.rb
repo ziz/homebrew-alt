@@ -1,14 +1,15 @@
 require 'formula'
 
 class Kindlegen < Formula
-  url 'http://s3.amazonaws.com/kindlegen/KindleGen_Mac_i386_v2.zip'
+  url 'http://s3.amazonaws.com/kindlegen/KindleGen_Mac_i386_v2_5.zip'
   homepage 'http://www.amazon.com/gp/feature.html?docId=1000234621'
-  md5 '047940fa927751ca426e0cfab0f30815'
-  version '2.3'
+  md5 '8daf6956d54df8030b12ec9116945482'
+  version '2.5'
 
   skip_clean 'bin'
 
   def install
+    chmod 0755, Dir['kindlegen']
     bin.install Dir['kindlegen']
   end
 
